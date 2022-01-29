@@ -16,6 +16,7 @@
 :root {
   --primary-white-color: #ffffff;
   --dark-bg-color: #2f303a;
+  --reserv-bg-color: #c4c4c4;
   --dimm-bg-color: #f5f4fa;
   --current-item-color: #2196f3;
   --btn-hover-color: #188ce8;
@@ -51,7 +52,7 @@ h2 {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
 }
 .list {
   padding: 0;
@@ -156,6 +157,13 @@ h2 {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.address-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--primary-text-color);
+  outline: 1px solid red;
+}
+
 .contact .mail:hover,
 .contact .mail:focus,
 .contact .tel:hover,
@@ -216,7 +224,13 @@ h2 {
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: var(--dark-bg-color);
+  background-repeat: no-repeat;
+  background-size: 1600px auto;
+  background-position: center;
+  background-color: var(--reserv-bg-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero_bg_img.jpg);
+
   color: var(--primary-white-color);
   text-align: center;
 }
