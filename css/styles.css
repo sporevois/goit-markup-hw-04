@@ -25,6 +25,7 @@
   --footer-adress-color: rgba(255, 255, 255, 0.6);
   --border-color: #eeeeee;
   --icon-color: #afb1b8;
+  --soc-icon-bg-color: rgba(255, 255, 255, 0.1);
 }
 
 /*::::::::::::::Body Styles:::::::::::::::::::::::*/
@@ -177,6 +178,9 @@ h2 {
 }
 
 /*<<<<<< Page Footer >>>>>>>>*/
+.footer-blocks {
+  display: flex;
+}
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -221,7 +225,35 @@ h2 {
 
   color: var(--primary-white-color);
 }
-
+/* Socials Block */
+.ftr-socials-conteiner {
+  margin-left: 70px;
+  margin-top: 12px;
+}
+.appeal {
+  margin-bottom: 20px;
+  line-height: 1.14;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+.ftr-link-icon {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  fill: var(--primary-white-color);
+}
+.ftr-soc-link-container {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background-color: var(--soc-icon-bg-color);
+}
+.ftr-soc-link-container:hover,
+.ftr-soc-link-container:focus {
+  background-color: var(--current-item-color);
+}
 /* <<<<< Page Main >>>>> */
 
 /* Hero */
