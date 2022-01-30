@@ -237,23 +237,24 @@ h2 {
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
-.ftr-link-icon {
-  width: 44px;
-  height: 44px;
-  padding: 12px;
-  fill: var(--primary-white-color);
-}
-.ftr-soc-link-container {
+.ftr-soc-link {
   display: inline-block;
   width: 44px;
   height: 44px;
+  padding: 12px;
   border-radius: 50px;
   background-color: var(--soc-icon-bg-color);
 }
-.ftr-soc-link-container:hover,
-.ftr-soc-link-container:focus {
+.ftr-link-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-white-color);
+}
+.soc-item:hover .ftr-soc-link {
   background-color: var(--current-item-color);
 }
+
 /* <<<<< Page Main >>>>> */
 
 /* Hero */
@@ -385,30 +386,29 @@ h2 {
   display: flex;
   justify-content: center;
 }
-.link-icon {
-  fill: var(--icon-color);
-
-  width: 44px;
-  height: 44px;
-  padding: 12px;
-}
-.link-icon:hover,
-.link-icon:focus {
-  fill: var(--primary-white-color);
-}
-.soc-link-container {
+.team-link {
   display: inline-block;
   width: 44px;
   height: 44px;
+  padding: 12px;
   border-radius: 50px;
+}
+.link-icon {
+  display: inline-block;
+  fill: var(--icon-color);
+  width: 20px;
+  height: 20px;
+}
+.soc-item:hover .team-link {
+  background-color: var(--current-item-color);
+}
+.soc-item:hover .link-icon {
+  fill: var(--primary-white-color);
 }
 .soc-item + .soc-item {
   margin-left: 10px;
 }
-.soc-link-container:hover,
-.soc-link-container:focus {
-  background-color: var(--current-item-color);
-}
+
 /* Our Clients  */
 .client-list {
   display: flex;
