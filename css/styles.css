@@ -24,6 +24,7 @@
   --title-text-color: #212121;
   --footer-adress-color: rgba(255, 255, 255, 0.6);
   --border-color: #eeeeee;
+  --icon-color: #afb1b8;
 }
 
 /*::::::::::::::Body Styles:::::::::::::::::::::::*/
@@ -52,7 +53,7 @@ h2 {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 .list {
   padding: 0;
@@ -142,12 +143,11 @@ h2 {
   margin-left: auto;
 }
 .contact .link {
-  display: block;
+  display: flex;
 }
 .contact .item + .item {
   margin-left: 50px;
 }
-
 .contact .mail,
 .contact .tel {
   color: var(--primary-text-color);
@@ -160,8 +160,13 @@ h2 {
 .address-icon {
   width: 16px;
   height: 16px;
-  fill: var(--primary-text-color);
-  outline: 1px solid red;
+  fill: currentColor;
+}
+.envelope {
+  margin-right: 10px;
+}
+.phone {
+  margin-right: 7px;
 }
 
 .contact .mail:hover,
@@ -270,6 +275,14 @@ h2 {
   background-color: var(--btn-hover-color);
 }
 /* Our advantages */
+.advantage-icon {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--dimm-bg-color);
+}
 .advantage-list {
   display: flex;
   justify-content: center;
@@ -331,9 +344,68 @@ h2 {
   margin-bottom: 10px;
 }
 .position {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+.social-network {
+  display: flex;
+  justify-content: center;
+}
+.link-icon {
+  fill: var(--icon-color);
+
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+}
+.link-icon:hover,
+.link-icon:focus {
+  fill: var(--primary-white-color);
+}
+.soc-link-container {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+}
+.soc-item + .soc-item {
+  margin-left: 10px;
+}
+.soc-link-container:hover,
+.soc-link-container:focus {
+  background-color: var(--current-item-color);
+}
+/* Our Clients  */
+.client-list {
+  display: flex;
+  justify-content: center;
+}
+.client-item + .client-item {
+  margin-left: 30px;
+}
+.client-icon {
+  width: 170px;
+  height: 92px;
+  fill: var(--icon-color);
+  padding: 15px 31px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.client-link-container:hover,
+.client-link-container:focus {
+  border-color: var(--current-item-color);
+}
+.client-icon:hover,
+.client-icon:focus {
+  fill: var(--current-item-color);
+  border-color: var(--current-item-color);
+}
+.client-list .link {
+  display: flex;
 }
 /* <<<<< Page Portfolio >>>>> */
 
