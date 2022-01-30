@@ -422,7 +422,7 @@ h2 {
   height: 92px;
   fill: var(--icon-color);
   padding: 15px 31px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-color);
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -436,9 +436,7 @@ h2 {
   fill: var(--current-item-color);
   border-color: var(--current-item-color);
 }
-.client-list .link {
-  display: flex;
-}
+
 /* <<<<< Page Portfolio >>>>> */
 
 /* Filter buttons */
