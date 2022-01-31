@@ -49,6 +49,9 @@ p {
 h2 {
   margin-bottom: 50px;
 }
+svg {
+  fill: currentColor;
+}
 .conteiner {
   margin: 0 auto;
   width: 1200px;
@@ -180,6 +183,7 @@ h2 {
 /*<<<<<< Page Footer >>>>>>>>*/
 .footer-blocks {
   display: flex;
+  align-items: baseline;
 }
 .page-footer {
   padding-top: 60px;
@@ -228,7 +232,6 @@ h2 {
 /* Socials Block */
 .ftr-socials-conteiner {
   margin-left: 70px;
-  margin-top: 12px;
 }
 .appeal {
   margin-bottom: 20px;
@@ -238,10 +241,11 @@ h2 {
   color: var(--primary-white-color);
 }
 .ftr-soc-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
   border-radius: 50px;
   background-color: var(--soc-icon-bg-color);
 }
@@ -261,7 +265,10 @@ h2 {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  height: 600px;
   background-repeat: no-repeat;
   background-size: 1600px auto;
   background-position: center;
@@ -309,10 +316,17 @@ h2 {
 }
 /* Our advantages */
 .advantage-icon {
-  padding: 25px 100px;
-  margin-bottom: 30px;
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+.thumb-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
+  margin-bottom: 30px;
   border-radius: 4px;
   background-color: var(--dimm-bg-color);
 }
@@ -387,10 +401,12 @@ h2 {
   justify-content: center;
 }
 .team-link {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
+
   border-radius: 50px;
 }
 .link-icon {
@@ -417,24 +433,26 @@ h2 {
 .client-item + .client-item {
   margin-left: 30px;
 }
-.client-icon {
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
-  fill: var(--icon-color);
-  padding: 15px 31px;
   border: 1px solid var(--icon-color);
   box-sizing: border-box;
   border-radius: 4px;
 }
-
-.client-link-container:hover,
-.client-link-container:focus {
+.client-icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--icon-color);
+}
+.client-link:hover {
   border-color: var(--current-item-color);
 }
-.client-icon:hover,
-.client-icon:focus {
+.client-link:hover .client-icon {
   fill: var(--current-item-color);
-  border-color: var(--current-item-color);
 }
 
 /* <<<<< Page Portfolio >>>>> */
@@ -485,7 +503,14 @@ h2 {
   width: 370px;
   height: 404px;
 }
-.portfolio .item:hover {
+.portfolio-link {
+  display: block;
+}
+.portfolio-box:hover .portfolio-link {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-box:focus .portfolio-link {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
